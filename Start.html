@@ -1,0 +1,279 @@
+
+<html>
+    <head>
+        <title>TOSPS.com : the One Stop Psychotherapy Shop</title>
+        <!-- Built For:
+                                                                                  Email: b bruckner
+                                                                                  Phone: 
+      
+                  © TOSPS.com :  the One Stop Psychotherapy Shop
+      
+                       Built By: Luke@jcsc.biz     |    © 2019 
+      
+                    This is a Landing or Entrance Page for the Documentation built for TOSPS.com.
+                              
+                   ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+                  ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+                  ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+                  |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+      
+           -->
+            <meta name="keywords" content="" />
+            <meta name="description" content=" - ">
+            <meta name="author" content="Luke@jcsc.biz">
+          <!-- Theme Skins -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet" type="text/css"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"/>
+          <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Roboto&subset=latin,devanagari" rel="stylesheet" type="text/css"/>
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+          
+          <!-- Favicon -->
+          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        
+        <style>
+            body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+} 
+
+main {
+  flex: 1 0 auto;
+}
+
+h1.title,
+.footer-copyright a {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* start welcome animation */
+
+body.welcome {
+  background: #512da8;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.welcome .splash {
+  height: 0px;
+  padding: 0px;
+  border: 130em solid #039be5;
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  display: block;
+  box-sizing: initial;
+  overflow: hidden;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+
+.welcome #welcome {
+  background: #311b92 ;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+}
+   
+/* moveIn */
+.welcome header,
+.welcome a.btn {
+  opacity: 0;
+  animation: moveIn 2s 3.1s ease forwards;
+}
+
+@keyframes init {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes puff {
+  0% {
+    top: 100%;
+    height: 0px;
+    padding: 0px;
+  }
+  100% {
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
+}
+
+@keyframes borderRadius {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0px;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    background: #311b92;
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    background: #039be5;
+  }
+}
+
+@keyframes materia {
+  0% {
+    background: #039be5;
+  }
+  50% {
+    background: #039be5;
+    top: 26px;
+  }
+  100% {
+    background: #311b92;
+    width: 100%;
+    height: 64px;
+    border-radius: 0px;
+    top: 26px;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} 
+        </style>
+    </head>
+    <body>
+        <body class="welcome">
+            <span id="splash-overlay" class="splash"></span>
+            <span id="welcome" class="z-depth-4"></span>
+           
+            <header class="navbar-fixed"> 
+              <nav class="row deep-purple darken-3">
+                <div class="col s12">
+                  <ul class="right">
+                    <li class="right">
+                      <a href="https://steemit.com/@jcsc" target="_blank" class="waves-effect waves-light"><img src="https://steemit.com/images/favicons/favicon-128.png" height="38px" /></a>
+                    </li>
+                    <li class="right">
+                      <a href="https://github.com/JewettCitySoftwareCorporation/TOSPS" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
+          
+            <main class="valign-wrapper">
+              <span class="container grey-text text-lighten-1 ">
+          
+                <p class="flow-text">Welcome to another project developed & built by:</p>
+                <h2 class="title grey-text text-lighten-3">Jewett&nbsp;City&nbsp;Software&nbsp;Corporation</h2>
+          
+                <blockquote class="flow-text">We build custom hardware & software solutions.</blockquote>
+          
+                <div class="center-align">
+                  <!-- Dropdown Trigger -->
+                  <a class="btn dropdown-button" href="" data-activates="exams">Products<i class="material-icons right">expand_more</i></a>
+          
+                  <!-- Dropdown Structure -->
+                  <ul id="exams" class="dropdown-content">
+                    <li><a href="#!">NAS Device&trade;</a></li>
+                    <li><a href="#!">ARM Server</a></li>
+                    <li><a href="http://BPHT5.com">BPHT5.com</a></li>
+                  </ul>
+                  <!-- Dropdown Trigger -->
+                  <a class="btn dropdown-button" href="" data-activates="study">Software<i class="material-icons right">expand_more</i></a>
+          
+                  <!-- Dropdown Structure -->
+                  <ul id="study" class="dropdown-content">
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/Portfolio/">Portfolio</a></li>
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/ReferenceLogger/">Reference&nbsp;Logger</a></li>
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/jcsc-Desktop/">jcsc-Desktop</a></li>
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/TOSPS/">Data - Metrics - Reporting</a></li>
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/TOSPS/">TOSPS</a></li>
+                    <li><a href="https://jewettcitysoftwarecorporation.github.io/eBike/">Duke'z eBikes</a></li>
+                  </ul>
+                </div><br />
+                <div class="logo"><b>Built For:</b>  TOSPS.com:  the One Stop Psychotherapy Shop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                  <a href="index.html"><img src="http://newsite.tosps.com/Portals/15/tosps_logo.jpg" alt="TOSPS" style="height: 68px"/></a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOSPS.com </a>
+                </div>
+              </span>
+            </main>
+          
+            <div class="fixed-action-btn">
+              <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
+                <i class="large material-icons">message</i>
+              </a>
+            </div>
+          
+            <div id="message" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Contact</h4>
+                <p>coming soon...</p>
+              </div>
+              <div class="modal-footer">
+                <a href="" class="modal-action modal-close waves-effect btn-flat">close</a>
+              </div> 
+            </div> 
+          
+            <footer class="page-footer deep-purple darken-3">
+              <div class="footer-copyright deep-purple darken-4">
+                <div class="container">
+                  <time datetime="{{ site.time | date: '%Y' }}">&copy; 2020 Jewett City Software Corporation</time>
+                </div>
+              </div>
+            </footer>
+          </body>
+    </body>
+</html>
