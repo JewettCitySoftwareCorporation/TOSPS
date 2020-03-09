@@ -1,0 +1,753 @@
+
+
+/** booking wizard */
+
+.float-left {
+    float: left;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.bubble-top-right {
+    width:411px;
+    height:276px;
+    float:left;
+    background: url('../img/bubble-top-right.png') 0 0 no-repeat;
+    text-align: center;
+}
+
+.bubble-top-left {
+    margin-left: 38px;
+    width:411px;
+    height:276px;
+    float:left;
+    background: url('../img/bubble-top-left.png') 0 0 no-repeat;
+    text-align: center;
+}
+
+.bubble-top-right span {
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 350px;
+    text-align: left;
+    display: block;
+    position: relative;
+
+}
+
+.bubble-top-right span em {
+        color: #ff9900;
+    font-style: normal;
+}
+
+.bubble-top-left span {
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 350px;
+    text-align: left;
+    display: block;
+    position: relative;
+
+}
+
+.bubble-top-left span em {
+    color: #6bce35;    font-style: normal;font-weight: bold;
+}
+
+
+
+
+        /*
+ * SimpleModal Basic Modal Dialog
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {
+    
+    
+    height:280px !important; width:400px; 
+    
+    /*color:#bbb; background-color:#333; border:4px solid #444;*/ 
+    
+    padding:12px;
+            border: 5px solid white;
+         background-color:#00aeef;
+             -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:6px; right:0px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
+
+
+
+
+
+
+
+
+/* Link.buttons */
+a.button {
+    transition:box-shadow .125s ease-in-out;
+    -o-transition:box-shadow .125s ease-in-out;
+    -moz-transition:box-shadow .125s ease-in-out;
+    -webkit-transition:box-shadow .125s ease-in-out;
+
+    font-family: 'Alfa Slab One', cursive;
+    color:#fff;
+    border:0;
+    text-shadow: 3px 3px 0px rgba(39,97,119,0.5);
+
+    margin:0.25em 0.15em;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    float: left;
+}
+a.button.large {
+    padding: 14px 60px;
+    font-size:2em;
+}
+
+a.button.medium {
+    padding: 14px 40px;
+    font-size:1.5em;
+}
+
+a.button.mediumcrisis {
+    padding: 14px 20px;
+    font-size:20px;
+}
+
+a.button.small {
+    padding: 7px 20px;
+    font-size:1em;
+}
+a.button.bordered {
+    border-style: outset;
+    border: 3px solid #fff;
+}
+a.button.bordered {
+    border-style: outset;
+    border: 3px solid #fff;
+}
+a.button:hover {
+    transition:box-shadow .125s ease-in-out;
+    -o-transition:box-shadow .125s ease-in-out;
+    -moz-transition:box-shadow .125s ease-in-out;
+    -webkit-transition:box-shadow .125s ease-in-out;
+}
+a.button.green {
+    background-color:#6bce35;
+
+    -moz-box-shadow: 6px 6px 0px rgba(71,164,64,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(71,164,64,0.75);
+    box-shadow: 6px 6px 0px rgba(71,164,64,0.75);
+}
+a.button.green:hover {
+    -moz-box-shadow: 3px 3px 0px rgba(71,164,64,0.75);
+    -webkit-box-shadow: 3px 3px 0px rgba(71,164,64,0.75);
+    box-shadow: 3px 3px 0px rgba(71,164,64,0.75);
+}
+a.button.grey {
+    background-color:#B1B1B1;
+
+    -moz-box-shadow: 6px 6px 0px rgba(123, 123, 123, 0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(123, 123, 123, 0.75);
+    box-shadow: 6px 6px 0px rgba(123, 123, 123, 0.75);
+}
+a.button.grey:hover {
+    -moz-box-shadow: 3px 3px 0px rgba(123, 123, 123, 0.75);
+    -webkit-box-shadow: 3px 3px 0px rgba(123, 123, 123, 0.75);
+    box-shadow: 3px 3px 0px rgba(123, 123, 123, 0.75);
+}
+a.button.red {
+    background-color:#c50000;
+
+    -moz-box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+    box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+}
+a.button.red:hover {
+    -moz-box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+    -webkit-box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+    box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+}
+
+a.button.orange {
+    background-color:orange;
+
+    -moz-box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+    box-shadow: 6px 6px 0px rgba(125,64,64,0.75);
+}
+a.button.orange:hover {
+    -moz-box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+    -webkit-box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+    box-shadow: 3px 3px 0px rgba(125,64,64,0.75);
+}
+
+a.button.blue {
+    background-color:#00aeef;
+    color:#fff;
+
+    -moz-box-shadow: 6px 6px 0px rgba(64,139,167,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(64,139,167,0.75);
+    box-shadow: 6px 6px 0px rgba(64,139,167,0.75);
+}
+a.button.blue:hover {
+    -moz-box-shadow: 3px 3px 0px rgba(64,139,167,0.75);
+    -webkit-box-shadow: 3px 3px 0px rgba(64,139,167,0.75);
+    box-shadow: 3px 3px 0px rgba(64,139,167,0.75);
+}
+a.button.disabled {
+    background-color:#818181;
+    color:#c3c3c3;
+
+    -moz-box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+    box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+}
+a.button.disabled:hover {
+    -moz-box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+    box-shadow: 6px 6px 0px rgba(92,92,92,0.75);
+}
+a.button.rounded {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+a.button.sharp-corner {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 0;
+
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 0;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+a.button.no-shadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a.button.no-shadow:hover {
+    -moz-box-shadow: 6px 6px 0px rgba(0,96,132,0.75);
+    -webkit-box-shadow: 6px 6px 0px rgba(0,96,132,0.75);
+    box-shadow: 6px 6px 0px rgba(0,96,132,0.75);
+}
+a.button.large i {
+    width: 52px;
+    height: 39px;
+    display: block;
+    float: left;
+    margin: 4px 10px 0px -40px;
+}
+a.button.large i.book {
+    background: url('../img/action-buttons.png') 0px -39px;
+    background-size:cover;
+}
+a.button.large i.speak {
+    background: url('../img/action-buttons.png') 0px 0px;
+    background-size:cover;
+}
+a.button.large i.thumb {
+    background: url('../img/action-buttons.png') 0px -125px;
+    background-size:cover;
+}
+a.button.small i.calendar1 {
+    background: url('../img/calendar1.png') 0px -1px;
+	background-size:cover;
+}
+a.button.medium i {
+    width: 39px;
+    height: 29px;
+    display: block;
+    float: left;
+    margin: 2px 10px 0px -30px;
+}
+a.button.medium i.book {
+    background: url('../img/action-buttons.png') 0px -29px;
+    background-size:cover;
+}
+a.button.medium i.speak {
+    background: url('../img/action-buttons.png') 0px 0px;
+    background-size:cover;
+}
+a.button.medium i.thumb {
+    background: url('../img/action-buttons.png') 0px -94px;
+    background-size:cover;
+}
+
+a.button.xsmall i {
+    width: 16px;
+    height: 10px;
+    display: block;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+    margin: 1px 5px 0px -5px;
+}
+
+a.button.small i {
+    width: 26px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin: 2px 10px 0px -10px;
+}
+a.button.small i.book {
+    background: url('../img/action-buttons.png') 0px -20px;
+    background-size:cover;
+}
+a.button.small i.speak {
+    background: url('../img/action-buttons.png') 0px 0px;
+    background-size:cover;
+}
+a.button.small i.thumb {
+    background: url('../img/action-buttons.png') 0px -62px;
+    background-size:cover;
+}
+#wizCampaignManagement {
+  width: 100%; }
+
+.CampaignManagement-Navigation {
+  width: 100%; }
+
+.CampaignManagement-Navigation tr td {
+  white-space: nowrap;
+  text-align: center; }
+
+.therapist-details {
+  width: 100%;
+  clear: both;
+  float: left;
+  border-top: 1px solid silver;
+  padding-top: -1px;
+  padding-bottom: -1px; }
+
+.therapist-results-grid .therapist-details {
+  width: 245px;
+  float: left;
+  clear: none; }
+
+.therapist-results-grid .therapist-details {
+  margin-right: 30px;
+  margin-top: 10px;
+margin-bottom:10px;
+  float: left;
+position:relative; }
+
+.therapist-results-grid .therapist-details div.therapist-details-details {
+  width: 245px;
+  float: left;
+  clear: none; }
+
+.therapist-results-grid .therapist-details .therapist-details-avatar {
+  width: 245px;
+  min-width: 245px;
+  max-width: 245px;
+  float: left;
+  clear: none;
+  height: 250px; }
+
+.therapist-results-grid .therapist-details .therapist-details-avatar img {
+  width: 245px;
+  min-width: 245px;
+  max-width: 245px;
+margin-top:10px; 
+/*height:245px;*/}
+
+#litTotal1 {
+   }
+
+#lblCostOfSession {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right:50px;
+  }
+
+#lblDepositRequired {
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+
+.therapist-details-confirmation {
+  width: 100%;
+  clear: both;
+  float: left;
+  border-top: 1px solid #00aeef;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.therapist-details-confirmation div.therapist-details-avatar {
+  float: left;
+  width: 120px;
+  height: 120px;
+  overflow: hidden; }
+
+.therapist-details-confirmation div.therapist-details-details {
+  width: 500px;
+  float: left;
+  margin-left: 10px; }
+
+.therapist-details-confirmation div.therapist-details-buttons {
+  float: right; }
+
+.therapist-details-avatar {
+  width: 198px;
+  height: 203px;
+  position: relative;
+  float: left; }
+
+.therapist-name,
+.therapist-biography,
+.therapist-rate,
+.therapist-view {
+  width: 100%;
+  float: left;
+  clear: both;
+  font-weight: normal;
+  display: block; }
+
+#pnlDetails {
+  height: 350px;
+  width: 410px;
+  display: none;
+  padding: 12px;
+padding-bottom:0px;
+  border: 5px solid white;
+  background-color: #00aeef;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.datepicker {
+  background-color: white;
+  width: 100%; }
+
+.therapist-name {
+  margin-top: 5px;
+  font-size: 1.2em; }
+
+.therapist-biography {
+  margin-top: 3px;
+  font-weight: bold;
+  font-size: 1em; }
+
+.therapist-rate {
+  margin-top: 3px;
+  font-size: 1em; }
+
+.therapist-view {
+  margin-top: 10px;
+  font-size: 1em; }
+
+.therapist-view-small {
+  font-size: .8em; }
+
+.therapist-details-avatar img {
+  width: 120px;
+  max-width: 120px;
+  width: 120px; }
+
+.therapist-details-avatar {
+  position: relative;
+  float: left; }
+
+.therapist-details-avatar .status {
+  position: absolute;
+  background-color: #6bce35;
+  background-color: rgba(69, 132, 34, 0.65);
+  height: 30px;
+  width: 100%;
+  color: #fff;
+  font-family: "Lato", "Helvetica Neue", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  bottom: 0px; }
+
+.therapist-details-total {
+font-weight: bold;
+font-size: 18px;
+float: right;
+margin-right: 145px; }
+
+.therapist-details-total-label {
+  font-weight: bold;
+  font-size: 18px;
+  float: right;
+  margin-right: 100px; }
+
+.therapist-details-deposit {
+  font-weight: bold;
+  font-size: 18px;
+  float: right;
+  /*margin-right: 35px;*/ }
+
+.therapist-details div.therapist-details-avatar {
+  float: left;
+  width: 120px;
+  height: 120px;
+  overflow: hidden; }
+
+.therapist-details div.therapist-details-details {
+  width: 500px;
+  float: left;
+  margin-left: 10px; }
+.therapist-details div.therapist-details-buttons {
+    float: right;}
+.therapist-results-grid .therapist-details div.therapist-details-buttons {
+    float: right;
+    position: absolute;
+    bottom: 0;}
+
+#wizCrisis {
+  margin-top: 20px;
+  width: 100%; }
+
+#wizRegular {
+  margin-top: 20px;
+  width: 100%; }
+
+#promptInner {
+  text-align: center;
+  color: white; }
+
+#promptInner h1 {
+  color: white;
+  margin-top: -10px; }
+
+#cmbProblem, #cmbSortOrder, #cmbSpecialism, #cmbView {
+  clear: both;
+  width: 250px;
+  margin-top: 15px;
+  font-size: 11px;
+  font-family: "Lato", "Helvetica Neue", Sans-serif;
+  padding: 5px;
+  margin-bottom: 20px;
+  color: #00aeef;
+  border: 3px solid transparent;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+#promptInner span.serious1 {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  display: block; }
+
+#promptInner span.serious2 {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  clear: both;
+  display: block;
+  margin-top: 20px; }
+
+#breadcrumbs {
+  font-family: "Lato", "Helvetica Neue", Sans-serif;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid silver;
+  color: black !important; }
+
+#breadcrumbs a {
+  color: black !important; }
+
+/* ==========================================================================
+   Breadcrumb chevrons
+   ========================================================================== */
+.chevron-breadcrumb {
+  margin: 0px !important;
+  margin-top: 15px !important;
+  padding: 0px !important;
+  list-style: none;
+  overflow: hidden;
+  font-family: "Lato", "Helvetica Neue", Sans-serif;
+  font-size: 16px; }
+
+.chevron-breadcrumb li {
+  float: left; }
+
+.chevron-breadcrumb li a {
+  cursor: default;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px 5px 45px;
+  background: #90d0eb;
+  position: relative;
+  display: block;
+  float: left;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.chevron-breadcrumb li a p {
+  font-size: 11px;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: normal; }
+
+.chevron-breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #90d0eb;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+margin-left:-5px;
+  left: 100%;
+  z-index: 2; }
+
+.chevron-breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 2px;
+  left: 100%;
+  z-index: 1; }
+
+.chevron-breadcrumb li.current a {
+  background: #0088c0; }
+
+.chevron-breadcrumb li.current a:after {
+  border-left: 30px solid #0088c0; }
+
+.chevron-breadcrumb li:first-child a {
+  padding-left: 10px; }
+
+/* DJ - no hover for now 
+.chevron-breadcrumb li a:hover { background: #00628a; }
+.chevron-breadcrumb li a:hover:after { border-left-color: #00628a !important; }
+*/
+#imgEditDate, #imgEditTime, #imgEditDuration {
+  cursor: pointer; }
+
+#cmbProblem, #cmbSortOrder, #cmbSpecialism, #cmbView {
+    border:1px solid #7b7b7b;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#f5f5f5;
+    margin-right:15px;
+font-size:13px;
+}
+#hlViewTherapist {margin-bottom:50px;}
+.therapist-view, .therapist-rate {font-size:0.9em;}
+.therapist-results-list .therapist-details-buttons {
+margin-top:35px;
+}
+.therapist-details-confirmation .therapist-name {
+margin-top: -15px;
+font-size: 1.5em;
+}
+.therapist-details-confirmation .therapist-name h4 {
+margin-bottom:5px; 
+}
+.therapist-details-confirmation .therapist-details-details {
+    font-family: "Lato", "Helvetica Neue", Sans-serif;
+}
+.therapist-details-confirmation .therapist-details-details .therapist-accreditation {
+font-weight:bold;
+font-sizeL0.9em;
+}
+#pnlDetails .simplemodal-wrap { overflow:hidden !important; }

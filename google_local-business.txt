@@ -1,0 +1,117 @@
+<html>
+  <head>
+  <!--   https://schema.org/LocalBusiness  -->
+  <!--   https://developers.google.com/search/docs/data-types/local-business  -->
+     <title>TOSPS.com : the One Stop Psychotherapy Shop</title>
+        <!-- Built For:
+                                                                                  Email: b bruckner
+                                                                                  Phone: 
+      
+                  © TOSPS.com :  the One Stop Psychotherapy Shop
+      
+                       Built By: Luke@jcsc.biz     |    © 2019 
+      
+                    This is a Landing or Entrance Page for the Documentation built for TOSPS.com.
+                              
+                   ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+                  ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+                  ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+                  |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+      
+           -->
+            <meta name="keywords" content="" />
+            <meta name="description" content=" - ">
+            <meta name="author" content="Luke@jcsc.biz">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "image": [
+        "http://newsite.tosps.com/Portals/15/tosps_logo.jpg",
+        "https://example.com/photos/4x3/photo.jpg",
+        "https://example.com/photos/16x9/photo.jpg"
+       ],
+      "@id": "http://TOSPS.com",
+      "name": "the One Stop Psychotherapy Shop",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1600 Saratoga Ave",
+        "addressLocality": "San Jose",
+        "addressRegion": "CA",
+        "postalCode": "95129",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.293058,
+        "longitude": -121.988331
+      },
+      "url": "http://www.TOSPS.com/therapist-locator",
+      "priceRange": "$$$",
+      "telephone": "+14088717984",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "23:59"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "23:00"
+        }
+      ],
+      "department": [
+        {
+          "@type": "Psychotherapy Shop",
+          "image": [
+        "http://newsite.tosps.com/Portals/15/tosps_logo.jpg",
+        "https://example.com/photos/4x3/photo.jpg",
+        "https://example.com/photos/16x9/photo.jpg"
+       ],
+          "name": "the One Stop Psychotherapy Shop",
+          "telephone": "+14088719385",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "00:00",
+              "closes": "23:59"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
